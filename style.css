@@ -1,0 +1,118 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.slideshow{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide .number-text{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: white;
+}
+
+.slide .caption{
+    position: absolute;
+    bottom: 15%;
+    margin: -1% 43%;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+button{
+    position: absolute;
+}
+
+button.next{
+    right:5%;
+    background-color: none;
+}
+
+button.prev{
+    left:5%;
+    background-color: none;
+}
+
+.dots{
+    position: absolute;
+    bottom: 2%;
+}
+
+.dot{
+    cursor: pointer;
+    height:15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}

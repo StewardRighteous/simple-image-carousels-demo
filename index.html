@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slide hide">
+        <div class="number-text">1/5</div>
+        <img src="image1.jpg" alt="" />
+        <div class="caption">Caption 1</div>
+      </div>
+
+      <div class="slide show">
+        <div class="number-text">2/5</div>
+        <img src="image2.jpg" alt="" />
+        <div class="caption">Caption 2</div>
+      </div>
+      <div class="slide hide">
+        <div class="number-text">3/5</div>
+        <img src="image3.jpg" alt="" />
+        <div class="caption">Caption 3</div>
+      </div>
+      <div class="slide hide">
+        <div class="number-text">4/5</div>
+        <img src="image4.jpg" alt="" />
+        <div class="caption">Caption 4</div>
+      </div>
+      <div class="slide hide">
+        <div class="number-text">5/5</div>
+        <img src="image5.jpg" alt="" />
+        <div class="caption">Caption 5</div>
+      </div>
+      <button class="next">></button>
+      <button class="prev"><</button>
+      <div class="dots">
+        <div class="dot" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        <div class="dot" data-index="4"></div>
+      </div>
+    </div>
+  </body>
+</html>
